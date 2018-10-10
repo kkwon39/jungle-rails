@@ -15,3 +15,18 @@ body {
 form.button_to {
   display: inline;
 }
+
+.logged-in {
+    text-align: center;
+    height: inherit;
+    padding: 5px;
+}
+
+.logged-in a {
+  padding: 0 !important;
+  color: royalblue !important;
+}
+
+.fake-butt a {
+  color: royalblue !important;
+}
