@@ -23,8 +23,8 @@
         <%= render @line_items %>
       </tbody>
     </table>
-    <table class="table table-bordered table-info">
-      <th class="text-center table-info">Grand Total: $<%= '%.2f' % (@order.total_cents.to_f / 100) %></th>
+    <table class="table table-bordered border-success">
+      <th class="text-center border-success">Grand Total: $<%= '%.2f' % (@order.total_cents.to_f / 100) %></th>
     </table>
   </div>
 
