@@ -1,0 +1,23 @@
+<% product = Product.find_by(id: line_item[:product_id]) %>
+<tr>
+  <td>
+    <%= image_tag product.image.tiny %>
+  </td>
+  <td>
+    <h4><%= product.name %></h4>
+    <br>
+    <p><%= product.description %></p>
+  </td>
+  <td class="text-center align-middle">
+    <%= product.category.name %>
+  </td>
+  <td class="text-center align-middle">
+    <%= '%.2f' % (line_item.item_price_cents.to_f / 100) %>
+  </td>
+  <td class="text-center align-middle">
+    <%= '%.2f' % (line_item.total_price_cents.to_f / 100) %>
+  </td>
+  <td class="text-center align-middle">
+    <%= line_item.quantity %>
+  </td>
+</tr>
