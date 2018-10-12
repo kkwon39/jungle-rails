@@ -14,6 +14,14 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def destroy
+    @review = Review.find_by(id: params[:id])
+    if @review.user_id == current_user.id
+      @review.destroy
+    end
+    redirect_to :back
+  end
+
   def review_params
     params.require(:review).permit(
       :description,
