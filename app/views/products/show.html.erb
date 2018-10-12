@@ -28,6 +28,12 @@
 
     <div class="row">
       <h3>Reviews</h3>
+        <% @review = Review.new(:product=>@product)%>
+        <%= form_for [@product, @review] do |f| %>
+          Comment: <%= f.text_area :description %><br />
+          Rating: <%= f.select(:rating, [1, 2, 3, 4, 5]) %><br />
+          <%= f.submit %>
+        <% end %>
       <table class="table table-bordered table-hover">
         <thead>
           <th>User</th>
@@ -35,7 +41,7 @@
           <th>Rating</th>
         </thead>
           <tbody>
-            <%= render @product.reviews %>
+            <%= render @product.reviews.reverse %>
           </tbody>
       </table>
     </div>

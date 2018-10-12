@@ -137,14 +137,14 @@ cat3.products.create!({
 user1 = User.create!({
   first_name: 'Raymond',
   last_name: 'Kwan',
-  email: 'test@test.com',
+  email: 'test1111@test.com',
   password_digest: '12345'
 })
 
 user2 = User.create!({
   first_name: 'Wilson',
   last_name: 'Kwan',
-  email: 'test2@test2.com',
+  email: 'test2222@test2.com',
   password_digest: '67890'
 })
 
@@ -163,7 +163,7 @@ prod1.reviews.create!({
 
 prod2.reviews.create!({
   description: 'This is bad!',
-  rating: 0,
+  rating: 1,
   user_id: user2.id
 })
 
