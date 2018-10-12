@@ -26,6 +26,20 @@
       </div>
     </div>
 
+    <div class="row">
+      <h3>Reviews</h3>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <th>User</th>
+          <th>Description</th>
+          <th>Rating</th>
+        </thead>
+          <tbody>
+            <%= render @product.reviews %>
+          </tbody>
+      </table>
+    </div>
+
   </article>
 
 </section>

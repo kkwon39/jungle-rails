@@ -1,0 +1,7 @@
+<% user = User.find_by(id: review[:user_id]) %>
+
+<tr>
+  <td><%= "#{user.first_name} #{user.last_name}" %></td>
+  <td><%= review.description %></td>
+  <td><%= review.rating %></td>
+</tr>
