@@ -12,6 +12,15 @@ Demonstation of ability working on an existing code base and new language (Ruby)
 - Basic http authentication for admins
 - Allowed admins to add products and categories under new namespace
 
+## Screenshots
+
+!['HomePage'](https://github.com/RayKayy/rainforest-rails/blob/master/docs/Home.png?raw=true)
+!['AdminProductPage'](https://github.com/RayKayy/rainforest-rails/blob/master/docs/admin-product.png?raw=true)
+!['EmptyCart'](https://github.com/RayKayy/rainforest-rails/blob/master/docs/empty-cart.png?raw=true)
+!['OrderConfirmation'](https://github.com/RayKayy/rainforest-rails/blob/master/docs/order-confirm.png?raw=true)
+!['Product'](https://github.com/RayKayy/rainforest-rails/blob/master/docs/product.png?raw=true)
+!['PurcahsePop'](https://github.com/RayKayy/rainforest-rails/blob/master/docs/purchase.png)
+
 ## Setup
 
 1. Fork & Clone
