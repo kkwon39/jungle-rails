@@ -8,19 +8,18 @@ RSpec.describe Product, type: :model do
 
   describe 'Validations' do
 
+    it { should validate_presence_of(:name) }
+    it { should validate_presence_of(:quantity) }
+    it { should belong_to(:category) }
+
     it "is valid with valid attributes" do
       expect(subject).to be_valid
     end
-
-    it { should validate_presence_of(:name) }
-    it { should validate_presence_of(:quantity) }
 
     it "is not valid without a price" do
       subject.price_cents = nil
       expect(subject).to_not be_valid
     end
-
-    it { should belong_to(:category) }
 
   end
 end
