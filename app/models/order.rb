@@ -7,10 +7,17 @@ class Order < ActiveRecord::Base
 
   validates :stripe_charge_id, presence: true
 
-  after_create :send_receipt
+  after_create :send_receipt, :update_products
 
   def send_receipt
     OrderMailer.receipt_email(self).deliver_later
+  end
+
+  def update_products
+    self.line_items.each do |item|
+      product = Product.find_by(id: item.product_id)
+      product.update!(quantity: product.quantity - item.quantity)
+    end
   end
 
 end
