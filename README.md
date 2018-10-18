@@ -1,4 +1,4 @@
-# Rainforest
+# Jungle Rails
 
 Demonstation of ability working on an existing code base and new language (Ruby) based on a mini e-commerce application built with Rails 4.2. Implemented a range tests using rspec.
 
